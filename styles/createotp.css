@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Afacad', sans-serif;
+    background:#fff;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+    border-bottom:1px solid #ddd;
+    padding:15px 25px;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header img{
+    width:55px;
+    height:auto;
+}
+
+/* DESKTOP SIDE IMAGE */
+.pic1{
+    position:fixed;
+    right:0;
+    top:90px;
+}
+
+.pic1 img{
+    width:auto;
+    height:88vh;
+}
+
+/* MOBILE HERO */
+.hero-banner{
+    display:none;
+}
+
+/* MAIN OTP SECTION */
+.otp{
+    width:100%;
+    max-width:600px;
+    padding:40px 20px;
+    margin-top:40px;
+}
+
+/* OTP IMAGE */
+.pic2{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.pic2 img{
+    width:250px;
+    max-width:100%;
+}
+
+/* TEXT */
+.p1{
+    text-align:center;
+    color:#6F4E37;
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+/* BUTTON CONTAINER */
+.btn-wrap{
+    display:flex;
+    justify-content:center;
+}
+
+/* BUTTON */
+button{
+    background:#6F4E37;
+    color:#fff;
+    border:none;
+    width:280px;
+    height:58px;
+    border-radius:14px;
+    font-size:30px;
+    font-family:'Gaegu', cursive;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    body{
+        min-height:100vh;
+    }
+
+    /* HIDE DESKTOP IMAGE */
+    .pic1{
+        display:none;
+    }
+
+    /* SHOW MOBILE HERO */
+    .hero-banner{
+        display:block;
+        margin:15px;
+    }
+
+    .hero-banner img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        border-radius:20px;
+    }
+
+    /* OTP SECTION */
+    .otp{
+        margin:auto;
+        padding:25px 20px 40px;
+    }
+
+    .pic2 img{
+        width:200px;
+    }
+
+    .p1{
+        font-size:16px;
+        margin-bottom:25px;
+    }
+
+    button{
+    width:280px;
+    height:58px;
+    font-size:30px;
+}
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header img{
+    height: 50%;
+    width: auto;
+    margin: 20px 0px 15px 30px;
+}
+
+body{
+    min-height: 115vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    position: fixed;
+    right: 30px;
+    margin-top: 30px;
+}
+
+/* Hidden by default; shown only on mobile */
+.hero-banner {
+    display: none;
+}
+
+form {
+    margin-top: 20px;
+    padding-left: 155px;
+    font-family: 'Afacad', sans-serif;
+}
+
+h1.font {
+    font-family: 'Gaegu', cursive;
+    font-size: 70px;
+    color: #000000;
+    padding-top: 50px;
+    padding-left: 75px;
+}
+
+button {
+    background-color: #6F4E37;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Gaegu', cursive;
+    height: 55px;
+    width: 275px;
+}
+
+#formbox {
+    border-radius: 10px;
+}
+
+p {
+    font-family: 'Afacad', sans-serif;
+}
+
+.p1 {
+    font-size: 18px;
+    color: #6F4E37;
+    padding-left: 150px;
+    margin-bottom: 17px;
+    font-family: 'Afacad', sans-serif;
+}
+
+.p2 {
+    font-size: 14px;
+    color: #000;
+    padding-left: 150px;
+    font-size: 17px;
+}
+
+#email {
+    padding: 10px;
+    border: 1.5px solid #6F4E37;
+    border-radius: 10px;
+    height: 55px;
+    width: 275px;
+    padding-left: 20px;
+}
+
+p a {
+    color: #6F4E37;
+    text-decoration: none;
+    font-size: 15px;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    margin-top: 15px;
+    font-size: 11.5px;
+    text-decoration: none;
+    color: #000000;
+    padding-left: 0;
+}
+
+.terms a {
+    color:#6F4E37;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.terms p{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+ 
+    /* Hide desktop side image */
+    .pic1 { display: none; }
+ 
+    /* Show hero banner below header */
+    .hero-banner {
+        display: block;
+        margin: 14px 16px 0;
+    }
+ 
+    .hero-banner img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+    }
+ 
+    /* Page title */
+    h1.font {
+        font-size: 34px;
+        padding-left: 20px;
+        padding-top: 22px;
+    }
+ 
+    .p1 {
+        font-size: 14px;
+        padding-left: 20px;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+ 
+    .p2 {
+        padding-left: 20px;
+        font-size: 13px;
+    }
+ 
+    /* Form */
+    form {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    #email {
+        width: 100%;
+        height: 54px;
+        border-radius: 14px;
+        font-size: 15px;
+    }
+ 
+    .password-container {
+        width: 100%;
+    }
+ 
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 26px;
+        border-radius: 16px;
+    }
+
+ 
+    .terms p {
+        text-align: center;
+    }
+}

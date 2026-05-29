@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header img{
+    height: 50%;
+    width: auto;
+    margin: 20px 0px 15px 30px;
+}
+
+body{
+    min-height: 115vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    position: fixed;
+    right: 30px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+/* Hidden by default; shown only on mobile */
+.hero-banner {
+    display: none;
+}
+
+h1.font {
+    font-family: 'Gaegu', cursive;
+    font-size: 70px;
+    color: #000000;
+    padding-top: 50px;
+    padding-left: 45px;
+}
+
+p {
+    font-family: 'afacad', sans-serif;
+}
+
+.p1 {
+    font-size: 18px;
+    color: #6F4E37;
+    padding-left: 80px;
+    font-size: larger;
+    margin-bottom: 100px;
+}
+
+.otp-container{
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.otp-inputs{
+    display: flex;
+    gap: 12px;
+    padding-left: 80px;
+    margin-bottom: 75px;
+}
+
+.otp-inputs input{
+    width: 55px;
+    height: 65px;
+    border-radius: 15px;
+    border: 2px solid #6F4E37;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    outline: none;
+}
+
+.otp-inputs input:focus{
+    border-color:#4a90e2;
+    box-shadow:0 0 6px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #6F4E37;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: 'Gaegu', cursive;
+    height: 55px;
+    width: 275px;
+}
+
+.resend-form {
+    margin-top: 20px;
+}
+
+.resend-text {
+    font-size: 20px;
+    font-family: 'Afacad', sans-serif;
+    color: #000000;
+}
+
+.resend-link {
+    color: #6F4E37;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .pic1 { display: none; }
+
+    .hero-banner {
+        display: block;
+        margin: 14px 16px 0;
+    }
+
+    .hero-banner img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+    }
+
+    h1.font {
+        font-size: 34px;
+        padding-left: 20px;
+        padding-top: 22px;
+    }
+
+    .p1 {
+        font-size: 14px;
+        padding-left: 20px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+
+    .otp-container {
+        margin-top: 10px;
+    }
+
+    .otp-inputs {
+        padding-left: 20px;
+        gap: 8px;
+        margin-bottom: 30px;
+        flex-wrap: nowrap;
+    }
+
+    .otp-inputs input {
+        width: calc((100vw - 40px - 40px) / 6);
+        height: 56px;
+        font-size: 22px;
+        border-radius: 12px;
+    }
+
+    .terms {
+        padding-left: 20px !important;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 26px;
+        border-radius: 16px;
+    }
+
+    .resend-form {
+        margin-top: 14px;
+    }
+
+    .resend-text {
+        padding-left: 20px !important;
+        font-size: 15px;
+    }
+}

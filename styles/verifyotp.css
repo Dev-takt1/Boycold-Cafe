@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Gaegu&family=Montserrat:wght@500&family=Protest+Strike&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header img{
+    height: 50%;
+    width: auto;
+    margin: 20px 0px 15px 30px;
+}
+
+body{
+    min-height: 115vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    position: fixed;
+    right: 30px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+/* Hidden by default; shown only on mobile */
+.hero-banner {
+    display: none;
+}
+
+.pic2 {
+    margin-top: 65px;
+    margin-bottom: 25px;
+    padding-left: 95px;
+}
+
+
+form{
+    margin-top:20px;
+    padding-left:160px;
+    font-family:'Afacad', sans-serif;
+}
+
+p{
+    font-family:'Afacad', sans-serif;
+}
+
+.p1{
+    font-size:18px;
+    color:#6F4E37;
+    padding-left:100px;
+    margin-bottom:17px;
+}
+
+
+button{
+    background-color:#6F4E37;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    font-size:30px;
+    border-radius:10px;
+    font-family:'Gaegu', cursive;
+    height:55px;
+    width:275px;
+}
+
+@media (max-width: 768px) {
+
+    .pic1 { display: none; }
+
+    .hero-banner {
+        display: block;
+        margin: 14px 16px 0;
+    }
+
+    .hero-banner img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+    }
+
+    .pic2 {
+        margin-top: 30px;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .pic2 img {
+        width: 120px;
+        height: auto;
+    }
+
+    .otp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .p1 {
+        font-size: 14px;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        height: 60px;
+        font-size: 26px;
+        border-radius: 16px;
+    }
+}
